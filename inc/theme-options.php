@@ -85,6 +85,7 @@ function pu_customize_register( $wp_customize ) {
 		'Inspire' => __( 'Inspire', 'magazine-basic-plymouth' ),
 		'Pioneer' => __( 'Pioneer', 'magazine-basic-plymouth' ),
 		'Succeed' => __( 'Succeed', 'magazine-basic-plymouth' ),
+		'Research' => __( 'Research', 'magazine-basic-plymouth' ),
 		'Develop<br>Yourself' => __( 'Develop Yourself', 'magazine-basic-plymouth' ),
 	);
 	
