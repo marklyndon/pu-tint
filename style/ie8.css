@@ -1,0 +1,15 @@
+.call-action-title span{
+    background:url(../style/img/bg-ie8.png) repeat left top transparent;
+}
+
+.border-bottom-slider{
+    border: none!important;
+    height: 1px;
+    background:url(../style/img/bg-ie8.png) repeat-x left top transparent;
+}
+
+.border-bottom-header{
+    border: none!important;
+    height: 1px;
+    background:url(../style/img/bg-ie8.png) repeat-x left top transparent;
+}

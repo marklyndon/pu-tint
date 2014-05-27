@@ -1,0 +1,9 @@
+//-------------------------------------------------
+//		Quick Pager jquery plugin
+//		Created by dan and emanuel @geckonm.com
+//		www.geckonewmedia.com
+// 
+//		v1.1
+//		18/09/09 * bug fix by John V - http://blog.geekyjohn.com/
+//-------------------------------------------------
+(function(e){e.fn.quickPager=function(t){var n={pageSize:t[0],currentPage:1,holder:null,pagerLocation:"after"},t=e.extend(n,t);return this.each(function(){var n=e(this),r=1;n.wrap("<div class='simplePagerContainer'></div>");n.children().each(function(n){if(n<r*t.pageSize&&n>=(r-1)*t.pageSize)e(this).addClass("simplePagerPage"+r);else{e(this).addClass("simplePagerPage"+(r+1));r++}});n.children().hide();n.children(".simplePagerPage"+t.currentPage).show();if(r<=1)return;var s="<ul class='simplePagerNav'>";for(i=1;i<=r;i++)i==t.currentPage?s+="<li class='pagination-buttons currentPage simplePageNav"+i+"' rev='"+i+"'><a class='page-numbers' rel='"+i+"' href='#'>"+i+"</a></li>":s+="<li class='pagination-buttons simplePageNav"+i+"'><a class='page-numbers' rel='"+i+"' href='#'>"+i+"</a></li>";s+="<li class='simplePageNavEmpty'></li>";s+="</ul>";if(!t.holder)switch(t.pagerLocation){case"before":n.before(s);break;case"both":n.before(s);n.after(s);break;default:n.after(s)}else e(t.holder).append(s);n.parent().find(".simplePagerNav a").click(function(){var r=e(this).attr("rel");t.currentPage=r;if(t.holder){e(this).parent("li").parent("ul").parent(t.holder).find("li.currentPage").removeClass("currentPage");e(this).parent("li").parent("ul").parent(t.holder).find("a[rel='"+r+"']").parent("li").addClass("currentPage")}else{e(this).parent("li").parent("ul").parent(".simplePagerContainer").find("li.currentPage").removeClass("currentPage");e(this).parent("li").parent("ul").parent(".simplePagerContainer").find("a[rel='"+r+"']").parent("li").addClass("currentPage")}n.children().hide();n.find(".simplePagerPage"+r).show();return!1})})}})(jQuery);

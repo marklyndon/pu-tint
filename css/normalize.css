@@ -1,0 +1,141 @@
+body {
+  background-color: white;
+}
+
+body.home {
+  background-color: whitesmoke;
+}
+
+img.size-large {
+  max-width: 100%;
+  height: auto;
+}
+
+.alignleft {
+  float: left;
+  margin: 0 25px 25px 0;
+}
+
+.alignright {
+  float: right;
+  margin: 0 0px 25px 25px;
+}
+
+.clear {
+  clear: both;
+}
+
+#header {
+  background-color: #f8f8f8;
+  border-bottom: 1px #BBB solid;
+}
+#header .logo {
+  margin: 27px 0;
+  text-align: center;
+}
+#header .logo img {
+  max-height: 140px;
+  width: auto;
+}
+
+#nav {
+  text-align: center;
+}
+#nav ul {
+  list-style: none;
+  display: inline-block;
+  margin: 0 0 15px;
+  padding: 0;
+}
+#nav li {
+  float: left;
+}
+#nav li.current_page_item a:hover {
+  border-bottom: none;
+}
+#nav a:link, #nav a:visited {
+  display: block;
+  color: #353535;
+  font-size: 14px;
+  padding: 0 10px 5px;
+  margin: 0;
+  text-decoration: none;
+}
+#nav a:hover, #nav .current_page_item {
+  border-bottom: 2px solid #a80075;
+  text-decoration: none;
+}
+
+.btn-purple {
+  background: #a80075;
+  color: #FFF;
+}
+
+a:hover.btn-purple {
+  background: #8e1f5c;
+  text-decoration: none;
+  color: #FFF;
+}
+
+ul#slider {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#slider p {
+  margin-bottom: 20px;
+  font-weight: 200;
+  line-height: 1.4;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 51%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#footer {
+  background-color: #262626;
+  padding: 40px 0;
+}
+#footer .logo-footer img {
+  max-height: 100px;
+  width: auto;
+}
+
+/*--- QUOTE ---*/
+/*--- LIST ---*/
+/*----------//// PORTFOLIO \\-------------*/
+/*--- SIDEBAR ---*/
+/*--- CUSTOM MENU ---*/
+/*----------//// BLOG \\-------------*/
+/*----------//// BLOG single \\-------------*/
+/*--- FORM ---*/
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  #nav {
+    text-align: right;
+  }
+  #nav ul {
+    margin: 130px 0 0;
+  }
+
+  #header .logo {
+    text-align: left;
+  }
+}
+/* Medium devices (desktops, 992px and up) */
+/* Large devices (large desktops, 1200px and up) */
